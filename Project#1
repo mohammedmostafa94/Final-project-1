@@ -1,0 +1,34 @@
+Code#1:
+class Rectangle:
+    def __init__(self, width, height):
+        self.__width = width
+        self.__height = height
+        
+    def set_width(self, width):
+        self.__width = width
+
+    def get_width(self):
+        return self.__width
+
+    def set_height(self, height):
+        self.__height = height
+
+    
+    def get_height(self):
+        return self.__height
+
+    def calculate_perimeter(self):
+        return 2 * (self.__width + self.__height)
+
+    def calculate_area(self):
+        return self.__width * self.__height
+
+    def display(self):
+        print(f"Width: {self.__width}")
+        print(f"Height: {self.__height}")
+        print(f"Area: {self.calculate_area()}")
+        print(f"Perimeter: {self.calculate_perimeter()}")
+
+if __name__ == "__main__":
+    rect = Rectangle(5, 10)
+    rect.display()
